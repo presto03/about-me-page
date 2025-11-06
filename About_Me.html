@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>About Me</h1>
+    <p><em>A simple webpage introducing myself.</em></p>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>Hi! My name is Preston Brown. I’m currently studying Cyber Security. I enjoy learning new things and meeting new people.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p>I currently am attending BYU. I graduated High School from Lone Peak High.</p>
+    </section>
+
+    <section id="interests">
+      <h2>Interests</h2>
+      <p>I have a few different hobbies and interests: I love almost all sports, particularly basketball and football, I enjoy going to the gym, and I love eating food!</p>
+    </section>
+
+    <section id="funfact">
+      <h2>Fun Fact</h2>
+      <p>Click the button below to reveal a fun fact about me!</p>
+      <button onclick="showFact()">Show Fun Fact</button>
+      <p id="fact" style="display:none;"><strong>Fun Fact:</strong> I once beat cosmo in a race!</p>
+    </section>
+  </main>
+
+
+  <script>
+    function showFact() {
+      document.getElementById("fact").style.display = "block";
+    }
+  </script>
+</body>
+</html>
